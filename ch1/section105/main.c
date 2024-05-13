@@ -12,15 +12,34 @@
 	return 0;
 } */
 
+// Copy input to output, 2nd version
 /* int main() {
 	int c;
-	printf("%d", EOF);
-	while((c = getchar()) != EOF) {
-		putchar(c);
+	while((c = getchar()) != EOF) { // Gets a character, assigns it to c, then tests whether the character was the end-of-file signal
+		putchar(c); // Prints the character
 	}
 
 	return 0;
 } */
+
+// Exercise 1.6: Verify that the expression getchar() != EOF is 0 or 1
+/* int main() {
+    int c;
+    while ((c = getchar()) != EOF) {
+        printf("Is 0 or 1? %d\n", c != EOF);
+    }
+
+    printf("Is 0 or 1? %d\n", c != EOF);
+    return 0;
+}
+*/
+
+// Exercise 1.7: Write a program to print the value of EOF
+/* int main() {
+    printf("%d\n", EOF);
+    return 0;
+}
+*/
 
 /* int main() {
 	long nc;
@@ -100,7 +119,7 @@
 */
 
 // Exercise 1-8: Write a program to count blanks, tabs, and newlines
-int main() {
+/* int main() {
     int c, blanks, tabs, newlines;
     blanks = 0;
     tabs = 0;
@@ -119,7 +138,13 @@ int main() {
 
     return 0;
 }
+*/
 
+// Write a program to copy it's input to it's output, replacing each string of one or more blanks by a single blank
+//int main() {
+  //  int c;
+
+    //c = getchar();
 
 
 
