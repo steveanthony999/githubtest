@@ -89,7 +89,7 @@
 */
 
 // Exercise 1-8: Write a program to count newlines
-int main() {
+/* int main() {
     int c, nl;
     nl = 0;
     while ((c = getchar()) != EOF)
@@ -97,9 +97,27 @@ int main() {
             ++nl;
     printf("The number of new lines are %d\n", nl);
 }
+*/
 
+// Exercise 1-8: Write a program to count blanks, tabs, and newlines
+int main() {
+    int c, blanks, tabs, newlines;
+    blanks = 0;
+    tabs = 0;
+    newlines = 0;
 
+    while ((c = getchar()) != EOF)
+        if (c == ' ')
+            ++blanks;
+        if (c == '\t')
+            ++tabs;
+        if (c == '\n')
+            ++newlines;
 
+    printf("\tBlanks: %d\n\tTabs: %d\n\tNew Lines: %d\n", blanks, tabs, newlines);
+
+    return 0;
+}
 
 
 
