@@ -76,7 +76,7 @@
 
 // Exercise 1-8: Write a program to count tabs
 
-int main() {
+/* int main() {
     int c, t;
     t = 0;
     while ((c = getchar()) != EOF) {
@@ -86,9 +86,17 @@ int main() {
     printf("The number of tabs were %d\n", t);
     return 0;
 }
+*/
 
 // Exercise 1-8: Write a program to count newlines
-
+int main() {
+    int c, nl;
+    nl = 0;
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            ++nl;
+    printf("The number of new lines are %d\n", nl);
+}
 
 
 
