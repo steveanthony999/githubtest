@@ -22,7 +22,7 @@
 	return 0;
 } */
 
-int main() {
+/* int main() {
 	long nc;
 	nc = 0;
 
@@ -32,10 +32,46 @@ int main() {
 	}
 
 	return 0;
+} */
+
+/* int main() {
+	double nc;
+	
+	for(nc = 0; getchar() != EOF; ++nc)
+		;
+	printf("%.0f\n", nc);
+
+	return 0;
+} */
+
+// Section 1.5.3 - Line Counting
+// Counts input lines
+
+/* int main() {
+	int c, nl;
+
+	nl = 0;
+	printf("Count Input Lines\n");
+	while ((c = getchar()) != EOF)
+		if (c == '\n')
+			++nl;
+	printf("%d\n", nl);
+
+	return 0;
 } 
+*/
 
+// Write a program to count blanks
 
-
+int main() {
+	int c, blank;
+	blank = 0;
+	while ((c = getchar()) != EOF)
+		if (c == ' ')
+			++blank;
+	printf("%d\n", blank);
+	return 0;
+}
 
 
 
