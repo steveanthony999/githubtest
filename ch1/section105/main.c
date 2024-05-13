@@ -61,9 +61,9 @@
 } 
 */
 
-// Write a program to count blanks
+// Exercise 1-8: Write a program to count blanks
 
-int main() {
+/* int main() {
 	int c, blank;
 	blank = 0;
 	while ((c = getchar()) != EOF)
@@ -72,10 +72,52 @@ int main() {
 	printf("%d\n", blank);
 	return 0;
 }
+*/
 
+// Exercise 1-8: Write a program to count tabs
 
+/* int main() {
+    int c, t;
+    t = 0;
+    while ((c = getchar()) != EOF) {
+        if (c == '\t')
+            ++t;
+    }
+    printf("The number of tabs were %d\n", t);
+    return 0;
+}
+*/
 
+// Exercise 1-8: Write a program to count newlines
+/* int main() {
+    int c, nl;
+    nl = 0;
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            ++nl;
+    printf("The number of new lines are %d\n", nl);
+}
+*/
 
+// Exercise 1-8: Write a program to count blanks, tabs, and newlines
+int main() {
+    int c, blanks, tabs, newlines;
+    blanks = 0;
+    tabs = 0;
+    newlines = 0;
+
+    while ((c = getchar()) != EOF)
+        if (c == ' ')
+            ++blanks;
+        if (c == '\t')
+            ++tabs;
+        if (c == '\n')
+            ++newlines;
+
+    printf("\tBlanks: %d\n\tTabs: %d\n\tNew Lines: %d\n", blanks, tabs, newlines);
+
+    return 0;
+}
 
 
 
