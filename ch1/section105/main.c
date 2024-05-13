@@ -106,13 +106,14 @@ int main() {
     tabs = 0;
     newlines = 0;
 
-    while ((c = getchar()) != EOF)
+    while ((c = getchar()) != EOF) {
         if (c == ' ')
             ++blanks;
         if (c == '\t')
             ++tabs;
         if (c == '\n')
             ++newlines;
+    }
 
     printf("\tBlanks: %d\n\tTabs: %d\n\tNew Lines: %d\n", blanks, tabs, newlines);
 
