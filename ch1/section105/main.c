@@ -140,13 +140,47 @@
 }
 */
 
-// Write a program to copy it's input to it's output, replacing each string of one or more blanks by a single blank
-//int main() {
-  //  int c;
+// Exercise 1-9: Write a program to copy it's input to it's output, replacing each string of one or more blanks by a single blank
+/* int main() {
+    int c;
 
-    //c = getchar();
+    while ((c = getchar()) != EOF) {
+        if (c == ' ') {
+            c = '\0';
+        }
+        putchar(c);
+    }
 
+    return 0;
+}
+*/
 
+// Exercise 1-10: Write a program to copy it's input to it's output, replacing each tab by \t, each backspace by \b, and each backslash by \\.
+// This makes tabs and backspaces visible in an unambiguous way
+int main() {
+    int c;
+
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
+            putchar('\\');
+            c = 't';
+        }
+
+        if (c == '\\') {
+            putchar('\\');
+            c = '\\';
+        }
+
+        if (c == '\b') {
+            putchar('\\');
+            c = 'b';
+        }
+
+        putchar(c);
+    }
+
+    return 0;
+}
 
 
 
