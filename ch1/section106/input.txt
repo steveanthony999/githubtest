@@ -1,0 +1,2 @@
+This is a test input for the histogram program. Let's see how it handles word lengths.
+
